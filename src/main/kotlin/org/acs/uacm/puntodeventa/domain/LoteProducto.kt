@@ -1,9 +1,7 @@
-package org.acs.uacm.org.acs.uacm.puntodeventa.domain
+package org.acs.uacm.puntodeventa.domain
 
-import org.acs.uacm.org.acs.uacm.puntodeventa.domain.Producto
-import org.acs.uacm.org.acs.uacm.puntodeventa.domain.constantes.Textos
+import org.acs.uacm.puntodeventa.domain.constantes.Textos
 import java.time.LocalDate
-import kotlin.math.sign
 
 /**
  * Clase **LoteProducto**.
