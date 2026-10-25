@@ -1,5 +1,6 @@
-package org.acs.uacm.org.acs.uacm.puntodeventa.domain
-import org.acs.uacm.org.acs.uacm.puntodeventa.domain.constantes.*
+package org.acs.uacm.puntodeventa.domain
+import org.acs.uacm.puntodeventa.domain.constantes.Conservacion
+import org.acs.uacm.puntodeventa.domain.constantes.Textos
 import java.math.BigDecimal
 
 /**
@@ -25,7 +26,7 @@ import java.math.BigDecimal
  * - **CONGELADO**:
  *
  * @author José Carlos Ascencio Navarro
- * @version 1.0.5
+ * @version 1.0.6
  * @see [CategoriaComercial]
  * @see [Conservacion]
  */
@@ -41,6 +42,6 @@ data class Producto(
     init {
         require(barCode.isNotBlank()) { Textos.BARCODE_VACIO }
         require(nombre.isNotBlank()) { Textos.NOMBRE_VACIO }
-        require(precio.signum() >= 0) { Textos.CANTIDAD_NEGATIVA }
+        require(precio >= BigDecimal.ZERO) { Textos.CANTIDAD_NEGATIVA }
     }
 }
