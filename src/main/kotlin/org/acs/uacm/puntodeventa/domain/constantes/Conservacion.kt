@@ -1,4 +1,4 @@
-package org.acs.uacm.org.acs.uacm.puntodeventa.domain.constantes
+package org.acs.uacm.puntodeventa.domain.constantes
 
 /**
  * Enumeración Conservacion que representa los tipos de conservacion de un producto.
@@ -7,11 +7,11 @@ package org.acs.uacm.org.acs.uacm.puntodeventa.domain.constantes
  * - **REFRIGERADO**:
  * - **CONGELADO**:
  * @author José Carlos Ascencio Navarro
- * @version 1.0.0
+ * @version 1.0.1
  */
 
 enum class Conservacion {
     SECO,
-    REFROGERADO,
+    REFRIGERADO,
     CONGELADO
 }
