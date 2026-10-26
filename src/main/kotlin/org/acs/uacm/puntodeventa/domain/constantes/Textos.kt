@@ -13,6 +13,7 @@ package org.acs.uacm.puntodeventa.domain.constantes
 object Textos {
     const val NOMBRE_VACIO = "El nombre no puede estar vacío"
     const val CANTIDAD_NEGATIVA = "La cantidad no puede ser negativa"
+    const val CANTIDAD_CERO="La cantidad debe ser mayor a 0"
     const val BARCODE_VACIO = "El barcode no puede ser negativo"
     const val ID_VACIO = "El id no puede estar vacio"
     const val FECHA_VENCIDA="La fecha de caducidad esta vencida"
