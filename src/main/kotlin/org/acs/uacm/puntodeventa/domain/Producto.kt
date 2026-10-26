@@ -67,7 +67,7 @@ import java.math.BigDecimal
  * @throws IllegalArgumentException Si el stock es negativo.
  *
  * @author José Carlos Ascencio Navarro
- * @version 2.3.0
+ * @version 2.3.1
  *
  * @see Marca
  * @see CategoriaComercial
@@ -91,7 +91,7 @@ data class Producto(
         require(barCode.isNotBlank()) { Textos.BARCODE_VACIO }
         require(nombre.isNotBlank()) { Textos.NOMBRE_VACIO }
         nombre = Normalizador.normalizar(nombre)
-        require(precio >= BigDecimal.ZERO) { Textos.CANTIDAD_NEGATIVA }
+        require(precio > BigDecimal.ZERO) { Textos.CANTIDAD_CERO }
         require(stock>=0){ Textos.CANTIDAD_NEGATIVA }
     }
 }
