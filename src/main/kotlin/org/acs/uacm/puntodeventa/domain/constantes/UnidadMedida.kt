@@ -12,13 +12,17 @@ package org.acs.uacm.puntodeventa.domain.constantes
  * - **MILILITRO**
  * - **PIEZA**
  *
+ * @property unidad Muestra la abreviatura de cada unidad de Medida.
+ *  - KILOGRAMO se muestra como Kg
+ *  - LITRO se muestra como Lt
+ *
  * @author José Carlos Ascencio Navarro
- * @version 1.0.0
+ * @version 1.1.0
  */
-enum class UnidadMedida {
-    GRAMO,
-    KILOGRAMO,
-    LITRO,
-    MILILITRO,
-    PIEZA
+enum class UnidadMedida(val unidad: String) {
+    GRAMO("g"),
+    KILOGRAMO("Kg"),
+    LITRO("Lt"),
+    MILILITRO("ml"),
+    PIEZA("pz")
 }
