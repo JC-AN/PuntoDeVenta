@@ -1,5 +1,5 @@
 package domain
-import org.acs.uacm.puntodeventa.domain.valueobjets.CategoriaComercial
+import org.acs.uacm.puntodeventa.data.CategoriaComercial
 import org.acs.uacm.puntodeventa.domain.constantes.Textos
 import org.junit.jupiter.api.assertThrows
 import kotlin.test.Test

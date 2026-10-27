@@ -1,11 +1,11 @@
 package domain
 import org.acs.uacm.puntodeventa.domain.constantes.Conservacion
-import org.acs.uacm.puntodeventa.domain.valueobjets.CategoriaComercial
+import org.acs.uacm.puntodeventa.data.CategoriaComercial
 import org.acs.uacm.puntodeventa.domain.Producto
 import org.acs.uacm.puntodeventa.domain.constantes.Textos
 import org.acs.uacm.puntodeventa.domain.constantes.UnidadMedida
-import org.acs.uacm.puntodeventa.domain.valueobjets.ContenidoNeto
-import org.acs.uacm.puntodeventa.domain.valueobjets.Marca
+import org.acs.uacm.puntodeventa.data.ContenidoNeto
+import org.acs.uacm.puntodeventa.data.Marca
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
 import java.math.BigDecimal
