@@ -1,32 +1,33 @@
-package org.acs.uacm.puntodeventa.domain.valueobjets
-
+package org.acs.uacm.puntodeventa.data
 import org.acs.uacm.puntodeventa.domain.constantes.Textos
 import org.acs.uacm.puntodeventa.service.Normalizador
 
 /**
- * **Marca**
- * Clase para guardar la Marca de un producto.
+ * **CategoriaComercial**
+ * Clase para guardar una categoria comercial de un producto
  *
  * Esta clase es necesaria para poder guardar los nombres de las
- * Marcas y posteriormente quitarlas o agregarlas.
+ * categorias comericiales y posteriormente quitar o agregarlas.
  *
  * Posibles datos:
- * - LALA
- * - CAPULLO
- * - FRESCA
+ * - ABARROTES
+ * - BEBIDAS
+ * - LACTEOS
+ * - FRUTAS Y VERDURAS
+ * - PANADERIA Y REPOSTERIA
  *
  * @property id Identificador único de la marca.
  * @property nombre Nombre comercial de la marca.
- * @property activa Indica si la **Marca** se encuentra disponible
+ * @property activa Indica si la **Categoria Comercial** se encuentra disponible
  * para registrar nuevos productos.
  *
- * @throws IllegalArgumentException Si el nombre está vacío.
+ * @throws IllegalArgumentException Si el nombre esta está vacío.
  *
  * @author José Carlos Ascencio Navarro
- * @version 1.0.1
- * @see [Normalizador]
+ * @version 2.0.2
+ * @see Normalizador
  */
-data class Marca (
+data class CategoriaComercial (
     var nombre : String,
     val id: Long? = null,
     val activa : Boolean=true
@@ -36,3 +37,4 @@ data class Marca (
         nombre= Normalizador.normalizar(nombre)
     }
 }
+

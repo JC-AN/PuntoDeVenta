@@ -1,4 +1,4 @@
-package org.acs.uacm.puntodeventa.domain.valueobjets
+package org.acs.uacm.puntodeventa.data
 
 import org.acs.uacm.puntodeventa.domain.constantes.Textos
 import org.acs.uacm.puntodeventa.domain.constantes.UnidadMedida
